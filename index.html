@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114106362-3"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-114106362-3');
+	</script>
+	<link rel="icon" type="image/png" href="../../img/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="../../img/favicon-16x16.png" sizes="16x16" />
+	<title>Dots | SaveState's Web Games</title>
+	<meta name="robots" content="noindex">
+	<meta name="author" content="Preston Corless, SaveState">
+	<style>*{margin:0}canvas{display:block}
+	p{
+		margin: 0;
+		font-family:arial;
+		position: absolute;
+		font-size:16px;
+		user-select: none;
+	}
+	#s{
+		top:16px;
+		left:20px;
+	}
+	#p{
+		top: 50%;
+		left: 50%;
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		font-size:64px;
+		text-align:center;
+	}
+	canvas{
+		background-color:#ddd;
+	}
+	</style>
+</head>
+<body oncontextmenu="return false;">
+	<canvas id="c"></canvas>
+	<p id="s"></p>
+	<p id="p">Click to Begin</p>
+	<script src="dots-engine.js?v=2"></script>
+</body>
+</html>
